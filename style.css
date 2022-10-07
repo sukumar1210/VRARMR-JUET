@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+ul{
+  padding-left: 60px;
+}
 h5 {
   font-family: 'Satoshi', sans-serif;
 
@@ -11,7 +14,7 @@ h5 {
 body {
   font-family: "ROBOTO", sans-serif;
 }
-.daddy{ font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 26.4px; color: rgba(255, 255, 255, 0.8) }
+.daddy{ font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 26.4px; color: rgba(255, 255, 255, 0.9) }
 .fuck{ 
   font-family: 'Satoshi';
   color: #adadad;
@@ -49,9 +52,9 @@ h1:hover {
 }
 
 .whoweare{
-  color:  rgb(150, 201, 233);
+  color:  rgba(255, 255, 255, 0.8);
   font-size:  23px;
-  
+  padding-left: 30px;  
 }
 
 .slider h2 {
