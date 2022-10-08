@@ -3,16 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+ul{
+  padding-left: 60px;
+}
 h5 {
   font-family: 'Satoshi', sans-serif;
 
 }
-
+a{
+  color: #ff0266;
+}
 body {
   font-family: "ROBOTO", sans-serif;
 }
-.daddy{ font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 26.4px; color: rgba(255, 255, 255, 0.8) }
-.fuck{ 
+.daddy{ font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 26.4px; color: rgba(255, 255, 255, 0.9) }
+.sub-text{ 
   font-family: 'Satoshi';
   color: #adadad;
   size: 25px;
@@ -49,9 +54,9 @@ h1:hover {
 }
 
 .whoweare{
-  color:  rgb(150, 201, 233);
-  font-size:  23px;
-  
+  color:  rgba(255, 255, 255, 0.8);
+  font-size:  21px;
+  padding-left: 30px;  
 }
 
 .slider h2 {
@@ -157,6 +162,9 @@ a {
   .nav-tab {
     font-size: 3vw;
   }
+  /* .whoweare{
+    margin-top: 5000;
+  } */
 }
 
 @media screen only (min-width: 360px) {
@@ -259,4 +267,19 @@ a {
 }
 .loader span:nth-child(22) {
   -webkit-animation-delay: 2.1s;
+}
+#big_text{
+  margin-top: 10px;
+  font-size: 25px;
+}
+.apply{
+  margin-top: 30px;
+  font-size: 30px;
+  color: #03dac6;
+  background-color: #100818;
+  border-radius: 10px;
+  border-color: white;
+  height: 70px;
+  width: 120px;
+
 }
