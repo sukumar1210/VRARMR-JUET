@@ -16,7 +16,16 @@ a{
 body {
   font-family: "ROBOTO", sans-serif;
 }
-.daddy{ font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 26.4px; color: rgba(255, 255, 255, 0.9) }
+#whoweare-bullets{
+  font-size: 19px;
+}
+.sub-text2{ font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            font-size: 19px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            line-height: 26.4px;
+            color: rgba(255, 255, 255, 0.9) }
 .sub-text{ 
   font-family: 'Satoshi';
   color: #adadad;
@@ -177,12 +186,7 @@ a {
   margin-top: 10px;
   font-size: 25px;
 }
-@media (max-width: 600px){
-  #big_text{
-    margin-top: 10px;
-    font-size: 15px;
-  }
-}
+
   .nav h2,
   .slider h2 {
     font-size: 2vw;
@@ -287,4 +291,21 @@ a {
   height: 70px;
   width: 120px;
 
+}
+@media (max-width: 600px){
+  #big_text{
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .whoweare{
+    font-size: 18px;
+  }
+  #whoweare-bullets{
+    font-size: 15px;
+  }
+  .apply{
+    font-size: 20px;
+    height: 50px;
+    width: 90px;
+  }
 }
