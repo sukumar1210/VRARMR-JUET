@@ -173,7 +173,16 @@ a {
     font-size: 8vw;
   }
 }
-
+#big_text{
+  margin-top: 10px;
+  font-size: 25px;
+}
+@media (max-width: 600px){
+  #big_text{
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}
   .nav h2,
   .slider h2 {
     font-size: 2vw;
@@ -267,10 +276,6 @@ a {
 }
 .loader span:nth-child(22) {
   -webkit-animation-delay: 2.1s;
-}
-#big_text{
-  margin-top: 10px;
-  font-size: 25px;
 }
 .apply{
   margin-top: 30px;
