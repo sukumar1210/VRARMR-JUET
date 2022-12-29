@@ -1,0 +1,153 @@
+/* * { border: 1px solid white; } */
+
+/* Landing Image */
+.land-image {
+    width: 60%;
+    margin-left: 20%;
+}
+
+/* Who We Are? */
+.whoweare{
+    width: 90%;
+    display: grid;
+    left: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 50px auto;
+}
+
+.box-parent{
+    position: relative;
+}
+
+.whoweare .box{
+    position: relative;
+    width: 182px;
+    height: 185px;
+    right: 200px;
+    top: 125px;
+
+    background: rgba(13, 156, 129, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 45px;
+}
+.whoweare img{
+    width: 100%;
+    margin: auto auto;
+}
+.whoweare-inner{
+    margin: 5%;
+    font-size: 1.7rem;
+    text-align: right;
+    line-height: 43.2px;
+}
+.whoweare-inner h2{
+    margin: 2rem;
+    font-size: 2rem;
+}
+.whoweare-inner p{
+    font-family: satoshi;
+}
+
+/* AR VR MR Cards */
+.card-container{
+    width: 100%;
+    height: 400px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 0rem;
+}
+
+.card{
+    background: linear-gradient(180deg, #0D9C81 14.18%, rgba(76, 21, 203, 0.13) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(14px);
+    border-radius: 34px;
+    width: 25%;
+    height: 100%;
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card *{
+    text-align: center;
+    font-size: 7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: -0.8rem;
+    margin: auto 0px;
+}
+.card p{
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+    width: 80%;
+    margin: 10px auto   ;
+}
+
+/* Domains We Offer */
+.dwo{
+    margin: 4rem;
+}
+
+.dwo h2{
+    margin: 3rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.dwo .dom{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 70%;
+    color: #4C15CB;
+    border: 5px solid #4C15CB;
+    border-radius: 34px;
+}
+.dom1{
+    background-image: url("/assets/bg-marble.png");
+    background-position: 1% 1%;
+}
+.dom2{
+    background-image: url("/assets/bg-marble.png");
+    background-position: 1% 20%;
+}
+.dom3{
+    background-image: url("/assets/bg-marble.png");
+    background-position: 1% 40%;
+}
+.dom4{
+    background-image: url("/assets/bg-marble.png");
+    background-position: 1% 60%;
+}
+
+/* About College */
+.ab-c{
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+    margin: 0 4%;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #0D9C81 0%, rgb(26, 9, 66) 100%);
+    border-radius: 21px;
+}
+.ab-c h2{
+    font-size: 3rem;
+    line-height: 3.4rem;
+}
+.ab-c p{
+    font-size: 2.2rem;
+    line-height: 2.5.rem;
+    margin: 1.2rem 0;
+}
+.ab-c img{
+    width: 100%;
+    border-radius: 36px;
+    margin: 1rem;
+}
