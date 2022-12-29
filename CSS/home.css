@@ -98,7 +98,7 @@
     text-align: center;
 }
 
-.dwo .dom{
+.dwo .dom > div{
     text-align: center;
     font-size: 2.5rem;
     font-weight: 400;
@@ -108,22 +108,19 @@
     color: #4C15CB;
     border: 5px solid #4C15CB;
     border-radius: 34px;
-    background-color: #80cec8;
+    background-image: url("./assets/bg-marble.png");
 }
 .dom1{
-    background-image: url("/assets/bg-marble.png");
+    
     background-position: 1% 1%;
 }
 .dom2{
-    background-image: url("/assets/bg-marble.png");
     background-position: 1% 20%;
 }
 .dom3{
-    background-image: url("/assets/bg-marble.png");
     background-position: 1% 40%;
 }
 .dom4{
-    background-image: url("/assets/bg-marble.png");
     background-position: 1% 60%;
 }
 
