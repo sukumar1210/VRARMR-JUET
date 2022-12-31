@@ -60,6 +60,7 @@ body{
 .header-inner a{
   color: aliceblue;
   padding: 15px 20px;
+  text-decoration: none;
 }
 
 .header-inner a:hover{
