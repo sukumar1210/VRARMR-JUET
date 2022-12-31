@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* * { border: 1px solid white; } */
+
+body {
+    background: #000;
+}
+
+/* Header Navbar */
+.header {
+    z-index: 1;
+    position: static;
+    /* width: 100%; */
+    top: 0px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    font-size: 1.3rem;
+    padding: 10px 10px;
+    border-bottom: 1px solid aliceblue;
+    border-radius: 0px;
+}
+
+.header-inner a {
+    color: aliceblue;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.header-inner a:hover {
+    text-decoration: underline solid aliceblue;
+    text-underline-offset: 0.7rem;
+}
+
+.header img {
+    width: 50px;
+}
+
+.header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header div p {
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+/* SVG animation */
+.svg_box{
+    height:500px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.svg{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+    margin-top:10%;
+}
+
+.large_rotate{
+    position:absolute;
+    animation: rotate_svg 6s infinite ;
+    animation-timing-function: linear;
+    transform-origin: 50% 50%;
+    transform-box:fill-box;
+}
+
+.small_rotate{
+    animation: rotate_svg_neg 4s infinite ;
+    animation-timing-function: linear;
+    transform-origin:50% 50%;
+    transform-box:fill-box;
+}
+
+@keyframes rotate_svg {
+    from{
+        transform:rotateZ(0);
+    }
+    to{
+        transform:rotateZ(360deg);
+    }
+}
+@keyframes rotate_svg_neg {
+    from{
+        transform:rotateZ(0deg);
+    }
+    to{
+        transform:rotateZ(-360deg);
+    }
+}
+
+.svg_content{
+    display: flex;
+    justify-content: center;
+    color:white;
+}
+
+.svg_content p{
+    font-family: satoshi;
+    font-size: 1rem;
+}
+
+.bottom_img {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
