@@ -1,6 +1,6 @@
 * {
   margin: 0px;
-  color: aliceblue;
+  color: black;
   font-family: sans-serif;
 }
 html {
@@ -11,7 +11,7 @@ html {
 /* * { border: 1px solid white; } */
 
 body{
-  background: #000;
+  background: rgb(209, 223, 236);
 }
 
 .poly1{
@@ -36,7 +36,7 @@ body{
 }
 
 #cur_page{
-  text-decoration: underline solid aliceblue;
+  text-decoration: underline solid black;
   text-underline-offset: 0.5rem;
 }
 
@@ -99,7 +99,7 @@ body{
   width: fit-content;
 }
 .footer *{
-  color: aliceblue;
+  color: black;
   font-size: 1.2rem;
   letter-spacing: 0.11em;
 }
