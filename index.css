@@ -121,8 +121,3 @@ body{
   order: 4;
 }
 
-.bottom_img{
-  position:fixed;
-  width:100%;
-  bottom:0;
-}
