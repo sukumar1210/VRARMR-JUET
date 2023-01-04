@@ -3,6 +3,11 @@
   color: aliceblue;
   font-family: sans-serif;
 }
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   margin: 0px;
   padding: 0px;
