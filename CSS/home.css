@@ -237,7 +237,7 @@ button:active .button_top {
     height: 1.5rem;
 }
 
-@media (width <= 1400px)  {
+@media (width <= 1550px)  {
     .whoweare{
         justify-content: center;
         grid-template-columns: 1fr 1fr;
