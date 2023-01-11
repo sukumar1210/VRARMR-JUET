@@ -141,14 +141,14 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 1rem auto;
 }
 .phone a{
   margin: 0.1rem auto;
 }
 .footer hr{
   text-align: center;
-  width: 40%;
+  width: 40rem;
 }
 .footer .socials{
   display: flex;
