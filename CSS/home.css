@@ -1,5 +1,28 @@
 /* * { border: 1px solid white; } */
 
+/* .poly1{
+    position: absolute;
+    left: -4.8rem;
+    top: 8rem;
+    z-index: -1;
+    width: 25%;
+  }
+  .poly2{
+    position: absolute;
+    z-index: -1;
+    width: 10%;
+    right: 5%;
+    top: 2rem;
+  }
+  .poly3{
+    display: none;
+    position: absolute;
+    right: 17%;
+    top: 115vh;
+    width: 25%;
+    z-index: -1;
+  } */
+
 .land-image{
     display: flex;
     flex-direction: column;
@@ -94,6 +117,8 @@
 
 .card{
     background: linear-gradient(180deg, #0D9C81 14.18%, rgba(76, 21, 203, 0.13) 100%);
+    /* background: linear-gradient(180deg, #55BEC0 0%, #354A64 65.5%, #161B37 93.23%); */
+    background: linear-gradient(180deg, rgba(85, 190, 192, 0.8) 14.18%, rgba(53, 74, 100, 0.478906) 65.58%, rgba(22, 27, 55, 0.2) 97.32%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(14px);
     border-radius: 34px;
