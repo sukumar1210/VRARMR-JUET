@@ -187,12 +187,9 @@ a {
   margin: auto 0.4rem;
 }
 .bot-img{
-  width: 100%;
-  height: 9.3rem;
-  position: relative;
-  Bottom: 0px;
-  padding: 0px;
-  margin: 0px;
+  width: 100vw;
+  height: 40px;
+  background: linear-gradient(#1C2347 40%, #55BEC0 40%);
 }
 @media (width <= 1550px)  {
   html{
