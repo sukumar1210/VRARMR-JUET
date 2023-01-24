@@ -316,11 +316,11 @@ button:active .button_top {
     }
 
     .land-image p{
-        font-size:7rem;
+        font-size:5rem;
     }
 
     .land-image p:nth-child(4){
-        letter-spacing:0.17em;
+        letter-spacing:0.25em;
     }
 
     /*who we are*/

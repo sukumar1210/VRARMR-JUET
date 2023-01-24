@@ -227,3 +227,16 @@ h3{
     width: 20vw;
     margin: auto;
 }
+
+
+@media ( width <= 685px){
+
+    .event-head{
+        margin:2rem ;
+    }
+
+    .event-head p{
+        font-size:1.8rem;
+    }
+
+}
