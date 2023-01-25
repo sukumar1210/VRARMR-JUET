@@ -268,7 +268,7 @@ button:active .button_top {
     height: 1.5rem;
 }
 
-@media (width <= 1550px)  {
+@media (851px<= width <= 1550px)  {
     .whoweare{
         justify-content: center;
         grid-template-columns: 1fr 1fr;
@@ -286,4 +286,93 @@ button:active .button_top {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
+}
+
+@media (685px <=width <= 850px)  {
+    .whoweare{
+        justify-content: center;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+    }
+    .whoweare-inner{
+        text-align: center;
+        line-height: 2rem;
+    }
+    .box{
+        display: none;
+    }
+    .ab-c{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (width<=685px){
+
+    /*landing images*/
+    .land-image img{
+        width:30rem;
+    }
+
+    .land-image p{
+        font-size:5rem;
+    }
+
+    .land-image p:nth-child(4){
+        letter-spacing:0.25em;
+    }
+
+    /*who we are*/
+    .whoweare{
+        grid-template-columns:auto;
+        grid-template-rows:1fr 1fr;
+    }
+
+    .whoweare-inner{
+        text-align: center;
+    }
+    
+    .whoweare-inner p{
+        text-align:justify;
+    }
+
+    /*cards*/
+    .card-container {
+        display:flex;
+        width:100%;
+        overflow-x: scroll;
+        justify-content: left;
+        scroll-snap-type: x mandatory;
+        flex-basis:300px;
+    }
+
+    .card{
+        flex:none;
+        scroll-snap-align: left;
+        width:50vw;
+        margin:0rem 3rem;
+        font-size: 0;
+    }
+
+    /*domains we offer*/
+    .dwo .dom > div{
+        max-width:70%;
+        font-size:2rem;
+    }
+
+    .dwo h2{
+        font-size:3.2rem;
+    }
+
+    /*about college*/
+    .ab-c{
+        grid-template-columns:1fr;
+        grid-template-rows:1fr 1fr;
+    }
+
+    .ab-c p{
+        font-size:1.5rem;
+    }
+
 }
