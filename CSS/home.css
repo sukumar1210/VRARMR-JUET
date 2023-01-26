@@ -51,6 +51,7 @@ html{
   }
 
 .land-image{
+    --img-height: 44rem; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,7 +88,7 @@ html{
 .land-image img{
     z-index:-1;
     position: absolute;
-    width: 44rem;
+    height: var(--img-height);
 }
 
 /* Who We Are? */
@@ -334,6 +335,11 @@ button:active .button_top {
 }
 
 @media (685px <= width <= 850px)  {
+
+    .land-image{
+        height:75vh;
+    }
+
     .whoweare{
         justify-content: center;
         grid-template-columns: 1fr 1fr;
@@ -412,12 +418,14 @@ button:active .button_top {
 
     /*landing images*/
     .land-image{
-        margin:10vh auto;
+        --img-height: 35rem;
+        height:fit-content;
+        margin: calc(90vh - calc(var(--img-height) * 1.5)) auto;
     }
 
-    .land-image img{
-        width:30rem;
-    }
+    /* .land-image img{
+        
+    } */
 
     .land-image p{
         font-size:5rem;
