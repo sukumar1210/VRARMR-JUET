@@ -1,17 +1,19 @@
-const left_btn=document.querySelector('#l-button');
-const right_btn=document.querySelector('#r-button');
+//Button .js in game zone
 
-left_btn.onclick = function(event) {
-    const content = document.getElementById('#content');
-    content.scrollLeft -= 300;
-    event.preventDefault();
-};
+// const left_btn=document.querySelector('#l-button');
+// const right_btn=document.querySelector('#r-button');
 
-right_btn.onclick= function(event) {
-    const content = document.getElementById('#content');
-    content.scrollLeft += 300;
-    event.preventDefault();
-};
+// left_btn.onclick = function(event) {
+//     const content = document.getElementById('#content');
+//     content.scrollLeft -= 300;
+//     event.preventDefault();
+// };
+
+// right_btn.onclick= function(event) {
+//     const content = document.getElementById('#content');
+//     content.scrollLeft += 300;
+//     event.preventDefault();
+// };
 
 // Dynamic Line Width determination
 
@@ -83,4 +85,5 @@ const card_cont_rect=card_container.getBoundingClientRect();
 // const card_cont_bot=card_cont_rect.bottom;
 
 const dividing_line=document.getElementById("dividing-line");
-dividing_line.style.height=((card_cont_rect.height)-75)+"px";
+dividing_line.style.height=((card_cont_rect.height)-40)+"px";
+console.log(card_cont_rect.height);
