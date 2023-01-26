@@ -267,8 +267,65 @@
     background: #60C79B;
 }
 
-.event_grid .card3_container .card_3_line {
-    position: absolute;
+.event_grid .card3_container .card_3_line{
+    position:absolute;
+    z-index:-1;
+    width:11rem;
+    left:100%;
+    top:10rem;
+    border:1px solid white;
+}
+
+.event_grid .card_3_line::after{
+    position: absolute; 
+    right: -1rem; 
+    bottom: -6px; 
+    height: 1rem; 
+    width: 1rem;
+    background: white; 
+    content: ""; 
+    border-radius: 50%;
+}
+
+.event_grid .card4_container{
+    flex-direction:row;
+    top:10rem;
+}
+
+.event_grid .card4_container .card4{
+    width: 30rem;
+    height: 30rem;
+    background: #55BEC0;
+}
+
+.event_grid .card4_container .card_4_line{
+    position:absolute;
+    z-index:-1;
+    width:11rem;
+    right:100%;
+    top:20rem;
+    border:1px solid white;
+}
+
+.event_grid .card4_container .card_4_line::before{
+    position: absolute; 
+    left: -0.8rem; 
+    bottom: -6px; 
+    height: 1rem; 
+    width: 1rem;
+    background: white; 
+    content: ""; 
+    border-radius: 50%;
+}
+
+.event_grid .card5_container .card5 {
+    z-index: 0;
+    width: 30rem;
+    height: 40rem;
+    background: rgba(13, 156, 129, 0.5);
+}
+
+.event_grid .card5_container .card_5_line {
     z-index: -1;
     width: 11rem;
     left: 100%;
@@ -299,6 +356,64 @@
 }
 
 .event_grid .card4_container .card_4_line {
+    position: absolute;
+    z-index: -1;
+    width: 11rem;
+    right: 100%;
+    top: 20rem;
+    border: 1px solid white;
+}
+
+.event_grid .card6_container .card_6_line::before {
+    position: absolute;
+    left: -0.8rem;
+    bottom: -6px;
+    height: 1rem;
+    width: 1rem;
+    background: white;
+    content: "";
+    border-radius: 50%;
+}
+
+.event_grid .card5_container .card5 {
+    z-index: 0;
+    width: 30rem;
+    height: 40rem;
+    background: rgba(13, 156, 129, 0.5);
+}
+
+.event_grid .card5_container .card_5_line {
+    z-index: -1;
+    position: absolute;
+    width: 11rem;
+    left: 100%;
+    top: 15rem;
+    border: 1px solid white;
+}
+
+.event_grid .card_5_line::after {
+    position: absolute;
+    right: -1rem;
+    bottom: -6px;
+    height: 1rem;
+    width: 1rem;
+    background: white;
+    content: "";
+    border-radius: 50%;
+}
+
+.event_grid .card6_container {
+    flex-direction: row;
+    top: 5rem;
+}
+
+.event_grid .card6_container .card6 {
+    width: 30rem;
+    height: 40rem;
+    background: #55BEC0;
+}
+
+.event_grid .card6_container .card_6_line {
     position: absolute;
     z-index: -1;
     width: 11rem;
