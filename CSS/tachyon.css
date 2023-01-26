@@ -38,8 +38,12 @@
 
 .land_content {
     width: 50rem;
+    text-transform: uppercase ;
 }
+.land_content h1{
+    font-size: 7rem;
 
+}
 .image_r img {
     position: absolute;
     z-index: -1;
