@@ -1,16 +1,23 @@
 /**{ border: 1px solid white; }*/
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 :root {
     --card-height: 40rem;
     --card-width: 30rem;
     --event-width: 125rem;
+    --font-large:4rem;
+    --font-small:2rem;
 }
 
+/* *{
+    font-family:'Poiret One',sans-serif;
+} */
+
+
+.header{
+    z-index:2;
+}
 /*---------------Landing Section---------------*/
+
 
 .landing_sect {
     display: flex;
@@ -42,9 +49,8 @@
 }
 
 .land_content>* {
-    font-family: 'Poiret One';
     font-style: normal;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #FFFFFF;
     text-align: center;
 }
@@ -53,14 +59,12 @@
 
 .g_zone {
     position: relative;
+    margin: 0 1rem;
 }
 
-.g_zone p {
+.g_zone h1 {
     display: block;
-    font-family: 'Poiret One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 4rem;
+    font-size: var(--font-large);
     text-align: center;
     margin: 5rem 0;
 }
@@ -69,7 +73,7 @@
     position: absolute;
     z-index: 1;
     width: 5rem;
-    top: 50vh;
+    top: 45vh;
     border: none;
     background: none;
 }
@@ -88,7 +92,7 @@
     z-index: 1;
     width: 5rem;
     right: 0;
-    top: 50vh;
+    top: 45vh;
     border: none;
     background: none;
 }
@@ -108,13 +112,30 @@
     scroll-behavior: smooth;
 }
 
-.g_cards>div:nth-child(n) {
+.g_cards >div:nth-child(n) {
+    display:flex;
+    flex-direction:column;
     scroll-snap-align: start;
     min-width: 30rem;
     background: linear-gradient(180deg, rgba(85, 190, 192, 0.3) 0%, rgba(28, 35, 71, 0.3) 100%);
     backdrop-filter: blur(25px);
     margin: 0 1rem;
+    justify-content:space-between;
 }
+
+.g_cards .card h1{
+    margin-left:1rem;
+    text-align:left;
+    font-size:3rem;
+}
+
+.g_cards .card p{
+    margin-right:1rem;
+    margin-bottom:1rem;
+    text-align: right;
+    font-size:1.5rem;
+}
+
 
 /*---------------Events Section---------------*/
 
@@ -131,7 +152,7 @@
 
 .event_content>* {
     display: block;
-    font-family: 'Poiret One';
+    /* font-family: 'Poiret One'; */
     font-style: normal;
     font-weight: 400;
     font-size: 4rem;
@@ -161,7 +182,7 @@
 
 .event_section .event_grid p {
     width: 30rem;
-    font-family: 'Poiret One';
+    /* font-family: 'Poiret One'; */
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
@@ -323,7 +344,7 @@
 
 .sponsor_head p {
     position: relative;
-    font-family: 'Poiret One';
+    /* font-family: 'Poiret One'; */
     font-style: normal;
     font-weight: 400;
     font-size: 4rem;
@@ -358,86 +379,123 @@
 }
 
 /* --------- Media Queries --------- */
-@media (685px <= width <=850px) {
+@media (685px < width <=900px) {
 
-}
-
-@media (width<=685px) {
-
-    .landing_sect .image_l img{
+    .g_zone{
+        margin:0 1rem;
+    }
+    .g_zone .g_cards{
+        height:30rem;
+    }
+    .g_cards::-webkit-scrollbar{
         display:none;
     }
-
-    .landing_sect .image_r img{
-        display:none;
-    }
-
     .g_zone .l_button{
         display:none;
     }
-
     .g_zone .r_button{
         display:none;
     }
 
+    ::-webkit-scrollbar{
+        display:none;
+    }
+
+    .sponsor_head .sponsor_grid>div:nth-child(n) {
+        margin: 0rem 1rem;
+    }
+
+    .event_section .poly3{
+        display:none;
+        overflow-x:hidden;
+    }
+
+}
+
+@media (width<=685px) {
+    
+    .header .header-inner a {
+        display: block;
+        color: aliceblue;
+        font-size:1.5rem;
+    }
+
+
+    .landing_sect .image_l img{
+        display:none;
+    }
+    .landing_sect .image_r img{
+        display:none;
+    }
+    .landing_sect .land_content{
+        margin:0 1rem;
+    }
+
+
+    .g_zone{
+        margin:0 1rem;
+    }
+    .g_zone .g_cards{
+        height:30rem;
+    }
+    .g_zone .l_button{
+        display:none;
+    }
+    .g_zone .r_button{
+        display:none;
+    }
+
+
+    .event_section{
+        margin-top:10rem;
+    }
     .event_section .event_grid {
         display: flex;
         flex-direction: column;
         margin: 1rem 1rem;
         align-items: center;
     }
-
-    .event_section .poly3 {
-        overflow-x: hidden;
+    .event_section .poly3{
+        display:none;
+        overflow-x:hidden;
     }
-
     .event_grid>div:nth-child(n) {
-
         width: var(--card-width)*2;
         height: var(--card-height);
         background: grey;
     }
-
     .event_grid .card4_container {
         top: 0rem;
     }
-
     .event_section .dividing_line {
         z-index: -2;
     }
-
     .event_grid .card1_container .card_1_line {
         display: none;
     }
-
     .event_grid .card2_container .card_2_line {
         display: none;
     }
-
     .event_grid .card3_container .card_3_line {
         display: none;
     }
-
     .event_grid .card4_container .card_4_line {
         display: none;
     }
-
     .event_section .dividing_line {
         height: 150rem;
     }
 
+
     .sponsor_head .sponsor_grid {
         margin: 0rem 2rem;
     }
-
     .sponsor_head .poly4 {
         display: none;
     }
-
     .sponsor_head .poly5 {
         display: none;
     }
-
     .sponsor_head .sponsor_grid>div:nth-child(n) {
         margin: 0rem 2rem;
     }
