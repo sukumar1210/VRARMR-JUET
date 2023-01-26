@@ -25,7 +25,7 @@ const card1_rect = card1.getBoundingClientRect();
 const card1_right = card1_rect.right;
 
 const line_1 =document.getElementById('card-1-line')
-line_1.style.width=((line_right-card1_right)-6)+"px";
+line_1.style.width=((line_right-card1_right)-7)+"px";
 
 
 //Line 2
@@ -34,7 +34,7 @@ const card2_rect = card2.getBoundingClientRect();
 const card2_left = card2_rect.left;
 
 const line_2 =document.getElementById('card-2-line')
-line_2.style.width=((card2_left-line_right)-6)+"px";
+line_2.style.width=((card2_left-line_right)-4)+"px";
 
 //Line 3
 const card3 = document.getElementById("card3-container");
@@ -42,7 +42,7 @@ const card3_rect = card3.getBoundingClientRect();
 const card3_right = card3_rect.right;
 
 const line_3 =document.getElementById('card-3-line')
-line_3.style.width=((line_right-card3_right)-6)+"px";
+line_3.style.width=((line_right-card3_right)-7)+"px";
 
 //Line 4
 const card4 = document.getElementById("card4-container");
@@ -50,4 +50,4 @@ const card4_rect = card4.getBoundingClientRect();
 const card4_left = card4_rect.left;
 
 const line_4 =document.getElementById('card-4-line')
-line_4.style.width=((card4_left-line_right)-6)+"px";
+line_4.style.width=((card4_left-line_right)-4)+"px";

@@ -1,8 +1,12 @@
 /* * { border: 1px solid white; } */
 
+html{
+    font-family:'Satoshi';
+}
+
 /* .poly1{
     position: absolute;
-    left: -4.8rem;
+    left: 4.8rem;
     top: 8rem;
     z-index: -1;
     width: 25%;
@@ -15,13 +19,36 @@
     top: 2rem;
   }
   .poly3{
-    display: none;
     position: absolute;
     right: 17%;
     top: 115vh;
     width: 25%;
     z-index: -1;
-  } */
+}  */
+
+.poly1{
+    display:none;
+    position: absolute;
+    left: -4.8rem;
+    top: 35rem;
+    z-index: -1;
+    width: 25%;
+  }
+  .poly2{
+    display:none;
+    position: absolute;
+    z-index: -1;
+    width: 10%;
+    right: 0%;
+    top: 5rem;
+  }
+  .poly3{
+    position: absolute;
+    right: 17%;
+    top: 115vh;
+    width: 25%;
+    z-index: -1;
+  }
 
 .land-image{
     display: flex;
@@ -29,7 +56,7 @@
     justify-content: center;
     width: 100%;
     align-items: center;
-    margin: 6rem auto;
+    margin: -7rem auto;
 }
 .land-image p{
     width: fit-content;
@@ -39,15 +66,19 @@
     max-width: 99%;
 }
 .land-image p:nth-child(1){
+    opacity:0;
     letter-spacing: -0.225em;
 }
 .land-image p:nth-child(2){
+    opacity:0;
     letter-spacing: -0.05em;
     margin-right: -0.05em;
 }
 .land-image p:nth-child(3){
+    opacity:0;
     letter-spacing: 0.085em;
     margin-right: -0.085em;
+    margin-bottom:20rem;
 }
 .land-image p:nth-child(4){
     letter-spacing: 0.22em;
@@ -82,7 +113,7 @@
     top: -10%;
     background: rgba(13, 156, 129, 0.5);
     backdrop-filter: blur(5px);
-    border-radius: 45px;
+    border-radius: 15px;
 }
 .whoweare img{
     width: 100%;
@@ -99,7 +130,6 @@
     font-size: 3rem;
 }
 .whoweare-inner p{
-    font-family: satoshi;
     text-align: justify;
 }
 
@@ -120,8 +150,8 @@
     /* background: linear-gradient(180deg, #55BEC0 0%, #354A64 65.5%, #161B37 93.23%); */
     background: linear-gradient(180deg, rgba(85, 190, 192, 0.8) 14.18%, rgba(53, 74, 100, 0.478906) 65.58%, rgba(22, 27, 55, 0.2) 97.32%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(14px);
-    border-radius: 34px;
+    backdrop-filter: blur(14px); 
+    border-radius: 15px;
     width: 25%;
     height: 100%;
     display: flex;
@@ -140,6 +170,8 @@
     display: relative;
 }
 .card p{
+    
+    font-family:'Satoshi';
     font-size: 1.5rem;
     letter-spacing: 0px;
     width: 80%;
@@ -148,40 +180,51 @@
 
 /* Domains We Offer */
 .dwo{
-    margin: 4rem;
+    display:block;
+    margin: 10rem 2rem;
 }
-
 .dwo h2{
-    margin: 3rem;
-    font-size: 4rem;
-    text-align: center;
+    font-size:4rem;
+    text-align:center;
+    height:10vh;
 }
 
-.dwo .dom > div{
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin: 20px auto;
-    padding: 1rem;
-    max-width: 70%;
-    color: #4C15CB;
-    border: 5px solid #4C15CB;
-    border-radius: 34px;
-    background-image: url("../assets/Home/bg-marble.png");
+.dwo .dom_container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin: 5rem 0px;
+    gap:0px;
 }
-.dom1{
-    
-    background-position: 1% 1%;
+
+
+.dwo .dom_container div:nth-child(even){
+    margin:1rem 0;
+    display:flex;
+    justify-content: space-around;
+    gap:5rem;
 }
-.dom2{
-    background-position: 1% 20%;
+.dwo .dom_container div:nth-child(odd){
+    margin:1rem 0;
+    display:flex;
+    flex-direction:row-reverse;
+    gap:5rem;
 }
-.dom3{
-    background-position: 1% 40%;
+.dwo .dom_container .dom div:nth-child(odd){
+    margin:1rem 0;
+    flex-direction:column;
+    font-size:2rem;
+    width:40rem;
+    height:30rem;
+    justify-content: center;
+
 }
-.dom4{
-    background-position: 1% 60%;
+.dwo .dom_container .dom div:nth-child(even){
+    margin:1rem 0;
+    width:40rem;
+    height:30rem;
 }
+
 
 /* About College */
 .ab-c{
@@ -193,8 +236,9 @@
     margin: 10rem 4%;
     align-items: center;
     justify-content: space-evenly;
-    background: linear-gradient(180deg, #0D9C81 0%, rgb(26, 9, 66) 90%, rgb(9, 3, 22) 100%);
-    border-radius: 21px;
+    /* background:linear-gradient(180deg, #55BEC0 0%, #354A64 65.5%, #161B37 93.23%); */
+    background:#5cb2b4b5;
+    border-radius: 5px;
 }
 .ab-c-txt{
     width: 100%;
@@ -211,7 +255,7 @@
 .ab-c img{
     width: 100%;
     overflow: hidden;
-    border-radius: 36px;
+    border-radius: 15px;
     transition: transform 0.2s, box-shadow 0.3s;
 }
 .ab-c img:hover{
@@ -288,7 +332,7 @@ button:active .button_top {
     }
 }
 
-@media (685px <=width <= 850px)  {
+@media (685px <= width <= 850px)  {
     .whoweare{
         justify-content: center;
         grid-template-columns: 1fr ;
@@ -299,18 +343,78 @@ button:active .button_top {
         text-align: center;
         line-height: 2rem;
     }
+
+    /*cards*/
+    .card-container {
+        height:26rem;
+        display:flex;
+        width:100%;
+        overflow-x: scroll;
+        justify-content: left;
+        scroll-snap-type: x mandatory;
+        flex-basis:300px;
+    }
+    .card-container::-webkit-scrollbar{
+        display: none;
+    }
+
+    .card{
+        flex:none;
+        scroll-snap-align: left;
+        width:50vw;
+        margin:0rem 3rem;
+        font-size: 0;
+    }
+
+    .dwo{
+        margin:0rem 0rem;
+    }
+
+    .dwo .dom_container div:nth-child(n){
+        margin-bottom:4rem;
+        gap:0rem;
+    }
+
+    .dwo .dom_container .dom div:nth-child(n){
+        margin-left:0rem;
+        margin-right:0rem;
+        text-align:center;      
+        height:20rem;
+        width:35rem;
+    }
+
+
+    .dwo .dom_container .dom .dom_text h1{
+        margin-right:0rem;
+        font-size:3rem;
+        margin-bottom:2rem;
+    }
+    .dwo .dom_container .dom .dom_text p{
+        font-size:1.3rem;
+    }
+
+    
     .box{
         display: none;
     }
     .ab-c{
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr;
+        height:60rem;
+    }
+    .ab-c-img{
+        width: 100%;
     }
 }
 
 @media (width<=685px){
 
     /*landing images*/
+    .land-image{
+        margin-top:1rem;
+        margin-bottom:1rem;
+    }
+
     .land-image img{
         width:30rem;
     }
@@ -325,6 +429,7 @@ button:active .button_top {
 
     /*who we are*/
     .whoweare{
+        margin-top:6rem;
         grid-template-columns:auto;
         grid-template-rows:1fr 1fr;
     }
@@ -337,14 +442,22 @@ button:active .button_top {
         text-align:justify;
     }
 
+    .box{
+        display:none;
+    }
+
     /*cards*/
     .card-container {
+        height:26rem;
         display:flex;
         width:100%;
         overflow-x: scroll;
         justify-content: left;
         scroll-snap-type: x mandatory;
         flex-basis:300px;
+    }
+    .card-container::-webkit-scrollbar{
+        display: none;
     }
 
     .card{
@@ -355,15 +468,40 @@ button:active .button_top {
         font-size: 0;
     }
 
-    /*domains we offer*/
-    .dwo .dom > div{
-        max-width:70%;
-        font-size:2rem;
+    /*domains we offer*/   
+    .dwo{
+        margin:0rem 0rem;
     }
 
-    .dwo h2{
-        font-size:3.2rem;
+    .dwo .dom_container{
+        margin:2rem;
     }
+
+    .dwo .dom_container div:nth-child(n){
+        flex-direction: column;
+        margin-bottom:-2rem;
+        gap:0rem;
+    }
+
+    .dwo .dom_container .dom div:nth-child(n){
+        text-align:center;      
+        height:20rem;
+        width:30rem;
+        gap:1rem;
+    }
+
+    .dwo .dom_container .dom .dom_image{
+        transform:translateY(-3rem);
+    }
+
+    .dwo .dom_container .dom .dom_text h1{
+        font-size:3rem;
+    }
+    .dwo .dom_container .dom .dom_text p{
+        font-size:1.5rem;
+    }
+
+
 
     /*about college*/
     .ab-c{
