@@ -369,4 +369,12 @@ h3{
         flex-grow:5;
         font-size:1.5rem;
     }
+
+    .event-grid .event .evnt-img{
+        margin-top:1rem;
+    } 
+
+    .event-grid .event .evnt-img img{
+        width:100%;
+    } 
 }
