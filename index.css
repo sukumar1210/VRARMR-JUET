@@ -3,7 +3,7 @@
 * {
   margin: 0px;
   color: aliceblue;
-  font-family: "Satoshi", sans-serif;
+  font-family: "Poiret One", sans-serif;
   padding: 0px;
 }
 
@@ -58,6 +58,7 @@ a {
   text-decoration: none;
 }
 
+/* 
 .poly1{
   position: fixed;
   left: -4.8rem;
@@ -71,13 +72,11 @@ a {
   width: 10%;
   right: 3em;
   top: 2rem;
-}
-.poly3{
-  position: fixed;
-  right: 6%;
-  bottom: 5%;
-  width: 25%;
-  z-index: -1;
+}*/
+.foot-img{
+  display: flex;
+  width: 20vw;
+  margin: auto;
 }
 
 #cur_page{
@@ -204,15 +203,6 @@ a {
   bottom: 0px;
 }
 
-@media (850px<= width <=1550px) {
-  html {
-    font-size: 12px;
-  }
-
-  .header{
-    z-index:1;
-  }
-}
 
 .header .toggle_button {
   position: absolute;
@@ -233,7 +223,18 @@ a {
   border-radius: 10px;
 }
 
-@media (685px <= width <850px) {
+@media (850px<= width <=1550px) {
+  html {
+    font-size: 12px;
+  }
+
+  .header{
+    z-index:1;
+  }
+}
+
+
+@media (685px < width <850px) {
   html {
     font-size: 10px;
     overflow-x:hidden;
@@ -248,8 +249,8 @@ a {
     display:block;
     position: fixed;
     z-index: 1;
-    width: 50px;
-    height: 300px;
+    width: 30px;
+    height: 100vh;
     margin: -100px 0 0 0;
     padding: 50px;
     padding-top: 125px;
@@ -261,25 +262,34 @@ a {
     margin-top: 00px;
 
     list-style-type: none;
-    transition: all 1s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: all 0.4s ease-out;
     
   }
 
   .header .header-inner a {
+    text-align: right;
+    padding:2.5rem;
     font-family: 'Satoshi';
     display: block;
-    color: white;
-    font-size:1.5rem;
+    color: aliceblue;
+    font-size:2rem;
   }
 
   .header .toggle_button {
     display: flex;
+    top:2.2rem;
+    padding:0.1rem;
+    border-radius:3px;
   }
 
   .header .header-inner.active {
     right:0px;
     opacity:1;
-    transform:translateX(-250px);
+    transform:translateX(-50vw);
+  }
+
+  html.active{
+    overflow-y:hidden;
   }
 
 }
@@ -317,14 +327,19 @@ a {
   }
 
   .header .header-inner a {
+    text-align: right;
+    padding:2rem;
     font-family: 'Satoshi';
     display: block;
-    color: white;
+    color: aliceblue;
     font-size:1.5rem;
   }
 
   .header .toggle_button {
     display: flex;
+    top:2.2rem;
+    padding:0.1rem;
+    border-radius:3px;
   }
 
   .header .header-inner.active {

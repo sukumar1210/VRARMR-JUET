@@ -1,4 +1,4 @@
-/* * {border: 1px solid white;} */
+/**{border: 1px solid white;} */
 h2{
     font-size: 5rem;
     font-weight: 400;
@@ -228,14 +228,134 @@ h3{
     margin: auto;
 }
 
+@media (685px < width <=850px){
 
-@media ( width <= 685px){
+    .top{
+        flex-direction:column;
+    }
+
+    .top img{
+        display:none;
+    }
+
+    .recent-events{
+        overflow-x:hidden;
+        margin:0rem;
+    }
+    .recent-events h2{
+        margin-top:10rem;
+        margin-left:1rem;
+        font-size:4rem;
+    }
+    .recent-events p{
+        margin-right:10rem;
+        margin-left:1rem;
+    }
+
+    .recent-events .txt-content {
+        margin-right:1rem;
+        grid-column:1/4;
+    }
+    .recent-events .txt-content h3{
+        text-align:center;
+        margin-top:4rem;
+        grid-column:1/4;
+        font-size:4rem;
+        margin-right:1rem;
+        margin-bottom:4rem;
+    }
+    .recent-events .txt-content p{
+        margin-right:0rem;
+    }
+
+    .planet-system{
+        top:1rem;
+        left:20vw;
+    }
+
+    .recent-events img{
+        grid-column:1/5;
+    }
 
     .event-head{
-        margin:2rem ;
+        margin-top:10rem;
+        width:100%; 
+    }
+
+    .event-head h2{
+        font-size:4rem;
+        width:100%;
+        margin:1rem;
+        text-align:center;
     }
 
     .event-head p{
-        font-size:1.8rem;
+        flex-grow:5;
+        font-size:1.5rem;
+    }
+}
+
+
+@media ( width <= 685px){
+
+    .top{
+        flex-direction:column;
+    }
+
+    .top img{
+        display:none;
+    }
+
+    .recent-events{
+        overflow-x:hidden;
+        margin:0rem;
+    }
+    .recent-events h2{
+        margin-left:1rem;
+        font-size:4rem;
+    }
+    .recent-events p{
+        margin-left:1rem;
+    }
+
+    .recent-events .txt-content {
+        margin-right:1rem;
+        grid-column:1/4;
+    }
+    .recent-events .txt-content h3{
+        margin-top:4rem;
+        grid-column:1/4;
+        font-size:4rem;
+        margin-right:1rem;
+    }
+    .recent-events .txt-content p{
+        margin-right:0rem;
+    }
+
+    .planet-system{
+        top:1rem;
+        left:10vw;
+    }
+
+    .recent-events img{
+        grid-column:1/4;
+        width:100%;
+    }
+
+    .event-head{
+        width:100%;
+        
+    }
+
+    .event-head h2{
+        font-size:4rem;
+        width:100%;
+        margin:1rem;
+        text-align:center;
+    }
+
+    .event-head p{
+        flex-grow:5;
+        font-size:1.5rem;
     }
 }
