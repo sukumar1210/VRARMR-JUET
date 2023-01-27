@@ -61,6 +61,9 @@
   left: 0px;
   background-color: #5D92C7;
 }
+.proj3{
+  display: none;
+}
 .proj3 .box{
   right: 0px;
   background-color: #8C4645;
