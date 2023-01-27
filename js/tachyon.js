@@ -1,17 +1,19 @@
-const left_btn=document.querySelector('#l-button');
-const right_btn=document.querySelector('#r-button');
+//Button .js in game zone
 
-left_btn.onclick = function(event) {
-    const content = document.getElementById('#content');
-    content.scrollLeft -= 300;
-    event.preventDefault();
-};
+// const left_btn=document.querySelector('#l-button');
+// const right_btn=document.querySelector('#r-button');
 
-right_btn.onclick= function(event) {
-    const content = document.getElementById('#content');
-    content.scrollLeft += 300;
-    event.preventDefault();
-};
+// left_btn.onclick = function(event) {
+//     const content = document.getElementById('#content');
+//     content.scrollLeft -= 300;
+//     event.preventDefault();
+// };
+
+// right_btn.onclick= function(event) {
+//     const content = document.getElementById('#content');
+//     content.scrollLeft += 300;
+//     event.preventDefault();
+// };
 
 // Dynamic Line Width determination
 
@@ -51,3 +53,37 @@ const card4_left = card4_rect.left;
 
 const line_4 =document.getElementById('card-4-line')
 line_4.style.width=((card4_left-line_right)-4)+"px";
+
+//Line 5
+const card5 = document.getElementById("card5-container");
+const card5_rect = card5.getBoundingClientRect();
+const card5_right = card5_rect.right;
+
+const line_5 =document.getElementById('card-5-line')
+line_5.style.width=((line_right-card5_right)-7)+"px";
+
+//Line 6
+const card6 = document.getElementById("card6-container");
+const card6_rect = card6.getBoundingClientRect();
+const card6_left = card6_rect.left;
+
+const line_6 =document.getElementById('card-6-line')
+line_6.style.width=((card6_left-line_right)-4)+"px";
+
+// //Line 7
+// const card7 = document.getElementById("card7-container");
+// const card7_rect = card7.getBoundingClientRect();
+// const card7_left = card7_rect.right;
+
+// const line_7 =document.getElementById('card-7-line')
+// line_7.style.width=((line_right-card7_left)-7)+"px";
+
+//Dividing Line
+const card_container = document.getElementById("event-grid");
+const card_cont_rect=card_container.getBoundingClientRect();
+// const card_cont_height=card_cont_rect.top;
+// const card_cont_bot=card_cont_rect.bottom;
+
+const dividing_line=document.getElementById("dividing-line");
+dividing_line.style.height=((card_cont_rect.height)-40)+"px";
+console.log(card_cont_rect.height);

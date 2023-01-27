@@ -1,3 +1,81 @@
-.raghav-sharma{
-    background-image: url("../../assets/about/prof-imgs/2nd-year/RAGHAV-SHARMA.jpg");
+.pic{
+    background-image: url("../../assets/about/prof-imgs/gen-prof-img.png");
+    /* background-color: #b0edee; */
+    /* filter: blur(5px); */
+
+}
+.fac-adv{
+    /* background-image: url(""); */
+}
+.adv{
+    /* background-image: url(""); */
+}
+.x201B332 .pic{
+    background-image: url("../../assets/about/prof-imgs/3rd/201B332.jpg");
+}
+.x201B307 .pic{
+    background-image: url("../../assets/about/prof-imgs/3rd/201B307.jpg");
+}
+.x201B309 .pic{
+    background-image: url("../../assets/about/prof-imgs/3rd/201B309.jpg");
+}
+.x201B353 .pic{
+    background-image: url("../../assets/about/prof-imgs/3rd/201B353.jpg");
+}
+.x201B353 .github{
+    display: none;
+}
+.x211B420 .pic{
+    background-image: url("../../assets/about/prof-imgs/2nd/211B420.jpg");
+}
+.x211B356 .pic{
+    background-image: url("../../assets/about/prof-imgs/2nd/211B356.jpg");
+}
+.x211B356 .linkedin{
+    display: none;
+}
+.x211B206 .pic{
+    background-image: url("../../assets/about/prof-imgs/2nd/211B206.jpg");
+}
+.x211B264 .pic{
+    background-image: url("../../assets/about/prof-imgs/2nd/211B264.jpg");
+}
+.x211B404 .pic{
+    background-image: url("../../assets/about/prof-imgs/2nd/211B404.jpg");
+}
+.x211B412 .pic{
+    background-image: url("../../assets/about/prof-imgs/2nd/211B412.jpeg");
+}
+.x211B090 .pic{
+    background-image: url("../../assets/about/prof-imgs/2nd/211B090.jpg");
+}
+.x211B090 .github{
+    display: none;
+}
+.x211B231 .pic{
+    background-image: url("../../assets/about/prof-imgs/2nd/211B231.jpg");
+}
+.x211B286 .pic{
+    background-image: url("../../assets/about/prof-imgs/2nd/211B286.jpg");
+}
+.x211B395 .pic{
+    background-image: url("../../assets/about/prof-imgs/2nd/211B395.jpg");
+}
+.x201B343 .pic{
+    background-image: url("../../assets/about/prof-imgs/2nd/201B343.jpg");
+}
+.x211B300 .pic{
+    background-image: url("../../assets/about/prof-imgs/2nd/211B300.jpg");
+}
+.x211B397 .pic{
+    background-image: url("../../assets/about/prof-imgs/2nd/211B397.jpg");
+}
+.x211B235 .pic{
+    background-image: url("../../assets/about/prof-imgs/2nd/211B235.jpg");
+}
+.x211b237 .pic{
+    background-image: url("../../assets/about/prof-imgs/2nd/211B237.jpg");
+}
+.x211b187 .pic{
+    background-image: url("../../assets/about/prof-imgs/2nd/211B187.jpg");
 }
