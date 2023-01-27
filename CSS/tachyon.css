@@ -117,7 +117,7 @@
     display: flex;
     overflow-x:scroll;
     justify-content: space-between;
-    height: 40rem;
+    height: fit-content;
     /* scroll-snap-type: x mandatory;
     scroll-behavior: smooth; */
 }
@@ -134,11 +134,19 @@
     justify-content:space-between;
 }
 
+.g_cards >div:nth-child(4) {
+    display: none;
+}
+
 .g_cards .card h2{
     margin-left:1rem;
     text-align:left;
     font-size:3rem;
     font-weight:400;
+}
+
+.g_cards .card img{
+    margin:1rem 1rem;
 }
 
 .g_cards .card p{
@@ -499,7 +507,6 @@
     }
     .g_zone .g_cards{
         overflow-x:scroll;
-        height:30rem;
     }
     .g_cards::-webkit-scrollbar{
         display:none;
@@ -580,7 +587,7 @@
         margin:0 1rem;
     }
     .g_zone .g_cards{
-        height:30rem;
+        height:fit-content;
     }
     .g_zone .l_button{
         display:none;
