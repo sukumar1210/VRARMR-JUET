@@ -1,6 +1,5 @@
 /* * { border: 1px solid white; } */
 
-
 .poly1{
   position: absolute;
   left: -4.8rem;
@@ -16,6 +15,7 @@
   top: 2rem;
 }
 .poly3{
+  display: none;
   position: absolute;
   right: 17%;
   top: 115vh;
@@ -52,16 +52,28 @@
   width: 35%;
   z-index: -1;
 }
-.proj1 .box{
-  right: 0px;
-  background-color: #7A5473;
+.proj:nth-child(even){
+  flex-direction: row;
 }
-
-.proj2 .box{
+.proj:nth-child(even) > .box{
+  right: 0px;
+  background-color: #55bec0;
+}
+.proj:nth-child(odd){
+  flex-direction: row-reverse;
+}
+.proj:nth-child(odd) > .box{
+  left: 0px;
+  background-color: #394f6b;
+}
+.proj:nth-child(4){
+  display: none;
+}
+.proj:nth-child(odd) > .box{
   left: 0px;
   background-color: #5D92C7;
 }
-.proj3{
+.proj:nth-child(4){
   display: none;
 }
 .proj3 .box{
@@ -74,6 +86,7 @@
 }
 .proj .proj-txt p{
   text-align: justify;
+  word-wrap: break-word;
 }
 .proj img {
   width: 40%;
@@ -95,6 +108,7 @@
   font-weight: 100;
   font-size: 2rem;
   padding-top: 15px;
+  word-wrap: break-word;
 }
 .youtube-vid{
   width: 40%;
@@ -107,20 +121,25 @@
   .poly1{
     display:none;
    }
- 
+   .proj:nth-child(n){
+    flex-direction: column;
+  }
    .proj{
      flex-direction:column-reverse;
      margin:5rem auto;
-     max-height:25vh;
+     /* max-height:25vh; */
+     min-height: auto;
+     padding: 1rem;
+     gap: 2rem;
    }
  
-   .proj1{
+   /* .proj1{
      flex-direction:column;
    }
 
    .proj3{
     flex-direction:column;
-   }
+   } */
  
    .proj .box{
      height:100%;
@@ -128,7 +147,7 @@
    }
  
    .proj .proj-txt{
-     margin:1rem;
+     /* margin:1rem; */
      max-width:100%;
    }
  
@@ -137,7 +156,7 @@
    }
  
    .youtube-vid{
-     width:90%;
+    width: 100%;
    }
 
 }
@@ -150,32 +169,36 @@
   .top{
     margin:1rem;
   }
-
+  .proj:nth-child(n){
+    flex-direction: column;
+  }
   .proj{
     flex-direction:column-reverse;
     margin-top:5rem;
-    width:90vw;
+    padding: 1rem;
+    width:80vw;
+    min-height: auto;
+    padding: 2rem;
+    gap: 2rem;
   }
-
-  .proj1{
-    flex-direction:column;
-  }
-
   .proj .box{
     height:100%;
     width:100%;
   }
 
   .proj .proj-txt{
-    margin:1rem;
+    /* margin:1rem; */
     max-width:100%;
   }
-
+  .proj .proj-txt h2{
+    size: 3rem;
+  }
   .proj .proj-txt p{
+    font-size: 1.5rem;
     text-align:center;
   }
 
   .youtube-vid{
-    width:90%;
+    width:100%;
   }
 }

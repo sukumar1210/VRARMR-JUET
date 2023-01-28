@@ -4,11 +4,17 @@
     /* filter: blur(5px); */
 
 }
-.fac-adv{
-    /* background-image: url(""); */
+.fac-adv .pic{
+    background-image: url("../../assets/about/prof-imgs/adv/fac-adv.jpeg");
 }
-.adv{
-    /* background-image: url(""); */
+.fac-adv .github{
+    display: none;
+}
+.adv-1 .pic{
+    background-image: url("../../assets/about/prof-imgs/adv/adv-1.jpg");
+}
+.adv-2 .pic{
+    background-image: url("../../assets/about/prof-imgs/adv/adv-2.jpg");
 }
 .x201B332 .pic{
     background-image: url("../../assets/about/prof-imgs/3rd/201B332.jpg");
@@ -44,7 +50,7 @@
     background-image: url("../../assets/about/prof-imgs/2nd/211B404.jpg");
 }
 .x211B412 .pic{
-    background-image: url("../../assets/about/prof-imgs/2nd/211B412.jpeg");
+    background-image: url("../../assets/about/prof-imgs/2nd/211B412.jpg");
 }
 .x211B090 .pic{
     background-image: url("../../assets/about/prof-imgs/2nd/211B090.jpg");
@@ -57,6 +63,12 @@
 }
 .x211B286 .pic{
     background-image: url("../../assets/about/prof-imgs/2nd/211B286.jpg");
+}
+.x211B428 .pic{
+    background-image: url("../../assets/about/prof-imgs/2nd/211B428.jpeg");
+}
+.x211B428 .github{
+    display: none;
 }
 .x211B395 .pic{
     background-image: url("../../assets/about/prof-imgs/2nd/211B395.jpg");
@@ -76,6 +88,65 @@
 .x211b237 .pic{
     background-image: url("../../assets/about/prof-imgs/2nd/211B237.jpg");
 }
+.x211B399 .pic{
+    background-image: url("../../assets/about/prof-imgs/2nd/211B399.jpeg");
+}
+.x211B399 .github{
+    display: none;
+}
 .x211b187 .pic{
     background-image: url("../../assets/about/prof-imgs/2nd/211B187.jpg");
+}
+
+/* volunteers */
+.x221B422 .pic{
+    background-image: url("../../assets/about/prof-imgs/1st/221B422.jpg");
+}
+.x221B469 .pic{
+    background-image: url("../../assets/about/prof-imgs/1st/221B469.jpg");
+}
+.x221B442 .pic{
+    background-image: url("../../assets/about/prof-imgs/1st/221B442.jpg");
+}
+.x221B407 .pic{
+    background-image: url("../../assets/about/prof-imgs/1st/221B407.jpg");
+}
+.x221B407 .linkedin{
+    display: none;
+}
+.x221B145 .pic{
+    background-image: url("../../assets/about/prof-imgs/1st/221B145.jpg");
+}
+.x221B478 .pic{
+    background-image: url("../../assets/about/prof-imgs/1st/221B478.png");
+}
+.x221A007 .pic{
+    background-image: url("../../assets/about/prof-imgs/1st/221A007.jpg");
+}
+.x221A007 .github{
+    display: none;
+}
+.x221B363 .pic{
+    background-image: url("../../assets/about/prof-imgs/1st/221B363.jpg");
+}
+.x221B065 .pic{
+    background-image: url("../../assets/about/prof-imgs/1st/221B065.jpg");
+}
+.x221B411 .pic{
+    background-image: url("../../assets/about/prof-imgs/1st/221B411.jpg");
+}
+.x221B411 .linkedin{
+    display: none;
+}
+.x221A002 .pic{
+    background-image: url("../../assets/about/prof-imgs/1st/221A002.jpg");
+}
+.x221B158 .pic{
+    background-image: url("../../assets/about/prof-imgs/1st/221B158.jpeg");
+}
+.x221B476 .pic{
+    background-image: url("../../assets/about/prof-imgs/1st/221B476.jpg");
+}
+.x221B276 .pic{
+    background-image: url("../../assets/about/prof-imgs/1st/221B276.jpg");
 }
