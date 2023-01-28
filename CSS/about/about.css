@@ -67,7 +67,7 @@
 .leads{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     width: fit-content;
     margin: auto;
     justify-content: center;
@@ -211,8 +211,10 @@
     }
 
     .team .profile .pic-container{
-        --pic-height:13rem;
-        --pic-width:8.5rem;
+        --pic-height:11rem;
     }
 
+    .volunteers .dom .members .profile .pic-container{
+        --pic-height: 10rem;
+    }
   }
